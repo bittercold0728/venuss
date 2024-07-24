@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+    
+
+        /* Main Section (Contact Form) */
+        .section {
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            background-color:rgb(248, 178, 0);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .container h2 {
+            width: 100%;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: black;
+        }
+
+        .profile-pic {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .profile-pic img {
+            width: 200px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .contactInfo {
+            flex: 2;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .contactInfo ul.info {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contactInfo ul.info li {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+        }
+
+        .contactInfo ul.info li:hover {
+            transform: scale(1.05);
+            background-color: white;
+        }
+
+        .contactInfo ul.info li span {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .contactInfo ul.info li span img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 10px;
+            transition: filter 0.3s ease;
+        }
+
+        .contactInfo ul.info li span img:hover {
+            filter: brightness(1.2); /* Slightly brighten the image on hover */
+        }
+
+        .contactInfo ul.info li a {
+            text-decoration: none; /* Removed underline for a cleaner look */
+            color: #333; /* Changed to a darker color */
+            transition: color 0.3s ease;
+        }
+
+        .contactInfo ul.info li a:hover {
+            color: #f8b200; /* Changed hover color to match theme */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="contact.html">Venus <span>Medija</span></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" id="check" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attributes.html">Hobbies and Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Contact Me</h1>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="profile-pic">
+                <img src="assets/profile.jpg" alt="Profile Picture">
+            </div>
+            <div class="contactInfo">
+                <ul class="info">
+                    <li>
+                        <span><img src="images/mail.png" alt="Email Icon"></span>
+                        <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=julieannsumipat30@gmail.com" target="_blank">VenusMedija76@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <span><img src="images/call.png" alt="Call Icon"></span>
+                        <span>09460169866</span>
+                    </li>
+                    <li>
+                        <span><img src="images/1.png" alt="Facebook Icon"></span>
+                        <span><a href="https://www.facebook.com/venixxx?mibextid=ZbWKwL">Venus Medija</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gallery</title>
+
+    <style>
+  
+  .head {
+    padding: 32px;
+    border-bottom: 4px solid;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="gallery.html">Venus <span>Medija</span></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="attributes.html">Hobbies and Favorites</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="head"></header>
+
+     <div class="gallery">
+      <img src="assets/photo1.jpg">
+      <img src="assets/photo2.jpg">
+      <img src="assets/photo3.jpg">
+      <img src="assets/photo4.jpg">
+      <img src="assets/photo5.jpg">
+      <img src="assets/photo6.jpg">
+      <img src="assets/photo7.jpg">
+      <img src="assets/photo8.jpg">
+      <img src="assets/photo9.jpg">
+    </div>
+   
+</body>
+</html>
